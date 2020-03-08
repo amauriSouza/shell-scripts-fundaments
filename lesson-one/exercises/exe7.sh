@@ -31,8 +31,9 @@ conf_rede () {
                     nameservers:
                         addresses: [$3,$4]
                     " >> config.yaml
-
-
+    
+    netplan generate
+    netplan apply
 }
 
 conf_rede $1 $2 $3 $4
