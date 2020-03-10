@@ -4,10 +4,10 @@
 conf_rede () {
 
     # VALIDACAO DE PARAMS - NAO FUNCIONANDO
-    # if [ -n $1 || -n $2 || -n $3 || -n $4 ] ; then
-    #     echo "Alguns do parametros é vazio/nulo"
-    #     exit 1
-    # fi
+     if [ ! $1 ] || [ ! $2 ] || [ ! $3 ] || [ ! $4 ]   ; then
+         echo "Alguns do parametros é vazio/nulo"
+         exit 0
+     fi
     
     cd $HOME
     pwd
