@@ -15,3 +15,4 @@ read num4
 media=$((($num1 + $num2 + $num3 + $num4)/4))
 
 echo "A média $media"
+exit 0
