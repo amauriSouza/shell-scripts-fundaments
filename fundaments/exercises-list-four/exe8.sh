@@ -16,9 +16,6 @@ soma=0
         fi
     done
 
-    
-
-echo "SOMAAAAA: $soma"
 echo "A média dos numeros pares e: $(expr $soma / $cont)";
 }
 
